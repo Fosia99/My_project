@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00E3BCB9"
+    tools:context=".FindFriendsActivity">
+
+    <include
+        android:id="@+id/find_friends_toolbar"
+        layout="@layout/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></include>
+
+    <RelativeLayout
+        android:id="@+id/myLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/find_friends_toolbar"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/SimpleTextID"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="270dp"
+            android:hint="Find Friends"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="14sp"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+            android:id="@+id/search_box_input"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/inputs"
+            android:inputType="textMultiLine">
+
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/search_friends_button"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="350dp"
+            android:layout_marginRight="0dp"
+            android:background="@drawable/inputs"
+            android:src="@drawable/search"></ImageButton>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/search_result_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/search_box_input"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"></androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+
+</RelativeLayout>

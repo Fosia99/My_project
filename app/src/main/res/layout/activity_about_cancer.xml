@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawable.layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBEAF3">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/about_main_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <include
+                    android:id="@+id/about_app_bar"
+                    layout="@layout/app_bar_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"></include>
+
+                <LinearLayout
+                    android:id="@+id/about_layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/about_main_layout"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/about_text1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:text="What is Breast Cancer?"
+                        android:textColor="#DFE42899"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/about_summary_into"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Breast cancer is when abnormal cells in the breast begin to grow and divide,
+in an controlled way and eventually form a growth(tumor).
+Breast cancer starts in the breast tissue,most commonly
+in the cells that line the milk ducts of the breast. These cancer cells can
+then invade surrounding tissues or spread (metastasize) to other areas of the
+body.
+ It is the common cancer in Namibia. It
+mainly affects women, but men can get it too."
+                        android:textSize="14sp"
+                        android:textStyle="normal">
+
+                    </TextView>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/about_into_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_below="@+id/about_layout1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/cancerinto" />
+
+
+                <LinearLayout
+                    android:id="@+id/about_layout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/about_into_pic"
+                    android:layout_marginTop="2dp"
+                    android:orientation="vertical"
+
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text=" What Causes Breast Cancer to Develop?"
+                        android:textColor="#DFE42899"
+                        android:textSize="18sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Cancer begins in the cells which are the basic
+building blocks that make up tissue. Sometimes,
+ the process of cell growth goes wrong and new cells form when the body doesn't need them and old or damaged cells do not die as they should.
+
+ These changes or mutations in DNA can cause a build up of cells which often
+  forms a mass of tissue called a lump , growth or tumor.
+
+ Certain DNA changes are passed on from parents(Inherited)
+and can greatly increase your risk of breast cancer.
+
+"
+                        android:textSize="14sp"
+                        android:textStyle="normal">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Breast cancer occurs when malignant tumors develop in the breast.
+These cells can spread by breaking away from the original tumor and entering blood vessels or lymph vessels,
+which branch into tissues throughout the body.                            When cancer cells travel to other parts of the body and begin damaging other tissues and organs,  the process is called
+"
+                        android:textSize="14sp"
+                        android:textStyle="normal"></TextView>
+
+                    <TextView
+                        android:id="@+id/about_metastasis_link"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="0dp"
+                        android:text=" metastasis."
+                        android:textColor="#DFE42899"
+                        android:textSize="14sp"
+                        android:textStyle="normal">
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+
+
+   <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp"
+    android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/about_layout3"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/about_layout2"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text=" The Breast structure"
+                        android:textColor="#DFE42899"
+                        android:textSize="18sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text=" Breasts are made up:"
+                        android:textSize="16sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text= "fat"
+                        android:textSize="14sp"
+                        android:textStyle="normal">
+
+                    </TextView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="connective tissue"
+                        android:textSize="14sp"
+                        android:textStyle="normal">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="a network of ducts or milk ducts"
+                        android:textSize="14sp"
+                        android:textStyle="normal"></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="glandular tissue divide into lobes(each containing lots of lobules)"
+                        android:textSize="14sp"
+                        android:textStyle="normal">
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical"
+                    android:layout_below="@id/about_layout2"
+                    android:layout_marginTop="80dp">
+
+                </LinearLayout>
+
+                <ImageView
+
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_below="@+id/about_layout2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="80dp"
+                    android:background="@drawable/breast"></ImageView>
+
+
+            </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_about"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start|left"
+        android:layout_marginBottom="3dp"
+        android:background="@color/colorPrimary"
+        app:menu="@menu/about_cancer_menu">
+
+    </com.google.android.material.navigation.NavigationView>
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBEAF3"
+    tools:context=".ProfileActivity">
+    <include
+        android:id="@+id/profile_app_bar"
+        layout="@layout/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"></include>
+    <LinearLayout
+        android:id="@+id/layout_buttons"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_below="@id/profile_app_bar"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_below="@id/profile_app_bar"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginRight="20dp"
+            android:hint="Hi"
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:layout_height="60dp">
+
+        </TextView>
+        <TextView
+            android:id="@+id/profile_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_app_bar"
+            android:background="@drawable/boarder"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:hint="Profile Name"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"></TextView>
+
+
+
+    </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_Image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/layout_buttons"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/profile">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/profile_userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_userName_display"
+            android:hint="User Name"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:layout_marginLeft="140dp"
+            android:background="@drawable/boarder"
+            android:textSize="18sp"
+            android:textStyle="normal"></TextView>
+    <TextView
+        android:id="@+id/profile_userName_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_buttons"
+        android:hint="User Name"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="140dp"
+        android:textSize="18sp"
+        android:textStyle="bold"></TextView>
+
+
+
+
+    <TextView
+        android:id="@+id/profile_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_status_display"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/boarder"
+        android:layout_marginRight="10dp"
+        android:hint="Profile Status ,This is were your status will be displayed"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="normal"></TextView>
+    <TextView
+        android:id="@+id/profile_status_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_userName"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="150dp"
+        android:hint="Profile Status"
+        android:textSize="18sp"
+        android:textStyle="bold"></TextView>
+
+
+    <TextView
+        android:id="@+id/profile_country_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_status"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Country"
+        android:textSize="18sp"
+        android:textStyle="bold"></TextView>
+
+
+    <TextView
+        android:id="@+id/profile_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/profile_status"
+        android:layout_marginTop="35dp"
+        android:hint="country"
+        android:background="@drawable/boarder"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="normal"></TextView>
+    <TextView
+        android:id="@+id/profile_dob_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_country"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:hint="Date of birth"
+        android:textSize="18sp"
+        android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/profile_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_country"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="120dp"
+                android:hint="Date of birth"
+                android:textAlignment="center"
+                android:background="@drawable/boarder"
+                android:textSize="18sp"
+                android:textStyle="normal"></TextView>
+
+
+            <TextView
+                android:id="@+id/profile_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_dob"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="120dp"
+                android:hint="Gender"
+                android:textAlignment="center"
+                android:background="@drawable/boarder"
+                android:textSize="18sp"
+                android:textStyle="normal"></TextView>
+
+    <TextView
+        android:id="@+id/profile_gender_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_dob"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:hint="Gender"
+        android:textSize="18sp"
+        android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/profile_relationship_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_gender"
+                android:layout_marginTop="20dp"
+                android:hint="Relationship Status"
+                android:layout_marginLeft="160dp"
+                android:background="@drawable/boarder"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="normal"></TextView>
+    <TextView
+        android:id="@+id/profile_relationship_status_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_gender"
+        android:layout_marginTop="20dp"
+        android:hint="Relationship Status"
+        android:textSize="18sp"
+        android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/profile_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_relationship_status"
+                android:layout_marginTop="20dp"
+                android:hint="Phone Number"
+                android:textAlignment="center"
+                android:layout_marginLeft="140dp"
+                android:background="@drawable/boarder"
+                android:textSize="18sp"
+                android:textStyle="normal"></TextView>
+
+    <TextView
+        android:id="@+id/profile_phone_number_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_relationship_status"
+        android:layout_marginTop="20dp"
+        android:hint="Phone Number"
+        android:layout_marginLeft="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"></TextView>
+
+
+
+    <TextView
+                android:id="@+id/profile_User_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_phone_number"
+                android:layout_marginTop="20dp"
+                android:hint="User Type"
+        android:layout_marginLeft="120dp"
+        android:textAlignment="center"
+                android:background="@drawable/boarder"
+                android:textSize="18sp"
+                android:textStyle="normal"></TextView>
+
+    <TextView
+        android:id="@+id/profile_User_type_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_phone_number"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:hint="User Type"
+        android:textSize="18sp"
+        android:textStyle="bold"></TextView>
+
+
+            <TextView
+                android:id="@+id/profile_interests"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_User_type"
+                android:layout_marginTop="20dp"
+                android:hint="Interests"
+                android:layout_marginLeft="120dp"
+                android:background="@drawable/boarder"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="normal"></TextView>
+
+    <TextView
+        android:id="@+id/profile_interests_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_User_type"
+        android:layout_marginTop="20dp"
+        android:hint="Interests"
+        android:layout_marginLeft="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"></TextView>
+
+    <Button
+        android:id="@+id/showMyPosts_button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="12sp"
+        android:layout_alignParentBottom="true"
+        android:background="#F2E6D1EC"
+        android:layout_marginBottom="10dp"
+        android:text="View my posts"
+
+        >
+    </Button>
+
+    <Button
+        android:id="@+id/edit_my_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="150dp"
+        android:layout_marginBottom="10dp"
+        android:background="#F2E6D1EC"
+        android:text="Edit Profile"
+        android:textSize="12sp">
+
+    </Button>
+</RelativeLayout>

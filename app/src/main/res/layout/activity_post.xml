@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".PostActivity">
+
+
+    <include
+        android:id="@+id/update_post_page_toolbar"
+
+        layout="@layout/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp">
+
+
+    </include>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/update_post_page_toolbar"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/profile_icon">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+    android:id="@+id/profileName"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="100dp"
+    android:layout_marginTop="17dp"
+    android:layout_below="@+id/update_post_page_toolbar"
+    android:layout_height="35dp">
+
+</TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#E1DEDE">
+
+        <TextView
+            android:id="@+id/add_image_text"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:text="Attach an image to your post"
+            android:textSize="20sp"></TextView>
+
+        <ImageButton
+            android:id="@+id/select_post_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/select_image" />
+
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/post_description"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/profileImage"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Anything to ask or share"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/update_new_post_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="16dp"
+        android:text="Send"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+
+
+</RelativeLayout>

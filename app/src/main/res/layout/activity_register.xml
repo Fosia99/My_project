@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fad9c1"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="95dp"
+            android:layout_marginLeft="-150dp"
+            android:gravity="center"
+            android:text="Create Account "
+            android:textAllCaps="false"
+            android:textColor="#0C0C0C"
+            android:textSize="26sp" />
+
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/register_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="230dp"
+        android:background="@android:color/transparent"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint=" email address"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:textColorHint="#fff"
+        android:textSize="16sp"
+        android:layout_weight="0.03"
+        android:drawableLeft="@drawable/email" />
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="220dp"
+        android:background="#8E3939" >
+    </View>
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="302dp"
+        android:background="@android:color/transparent"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint=" Password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+
+        android:paddingLeft="10dp"
+        android:textColorHint="#fff"
+        android:textSize="16sp"
+        android:layout_weight="0.05"
+        android:drawableLeft="@drawable/password"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="300dp"
+        android:background="#8E3939" >
+    </View>
+    <EditText
+        android:id="@+id/register_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="370dp"
+        android:background="@android:color/transparent"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+
+        android:paddingLeft="10dp"
+        android:textColorHint="#fff"
+        android:textSize="16sp"
+        android:layout_weight="0.05"
+        android:drawableLeft="@drawable/password"
+
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="372dp"
+        android:background="#8E3939" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="440dp"
+        android:background="#8E3939" >
+    </View>
+    <Button
+        android:id="@+id/register_create_account"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="490dp"
+        android:background="#F76"
+        android:padding="16dp"
+        android:text="Create Account"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

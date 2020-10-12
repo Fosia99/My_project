@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupsActivity">
+
+    <include
+        android:id="@+id/group_toolbar"
+        layout="@layout/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp">
+
+    </include>
+
+
+    <ImageButton
+        android:layout_below="@+id/group_toolbar"
+        android:id="@+id/group_icon"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/select_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp">
+
+    </ImageButton>
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:id="@+id/group_layout"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/group_toolbar"
+        android:layout_height="wrap_content">
+
+     <EditText
+         android:id="@+id/group_name"
+         android:hint="Group Name"
+         android:layout_marginLeft="50dp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content">
+
+     </EditText>
+
+    <EditText
+        android:id="@+id/group_description"
+        android:hint="Group Description"
+        android:layout_marginLeft="50dp"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/group_layout"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/create_group"
+        android:layout_width="wrap_content"
+        android:background="@drawable/button"
+        android:text="Create group"
+        android:textAllCaps="false"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+
+</RelativeLayout>

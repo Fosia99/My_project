@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:id="@+id/about_signs"
+        android:icon="@drawable/friends"
+        android:title="Signs and Symptoms" />
+
+    <item
+        android:id="@+id/about_self_exam"
+        android:icon="@drawable/add_post"
+        android:title="Self Examination" />
+
+
+    <item
+        android:id="@+id/about_risk_factors"
+        android:icon="@drawable/groups"
+        android:title="Causes and Risk factors" />
+
+    <item
+        android:id="@+id/about_treatment"
+        android:icon="@drawable/add_post"
+        android:title="Breast Cancer Treatment" />
+
+    <item
+        android:id="@+id/about_prevention"
+        android:icon="@drawable/add_post"
+        android:title="Breast Cancer Prevention" />
+
+    <item
+        android:id="@+id/about_more_info"
+        android:icon="@drawable/add_post"
+        android:title="More Information" />
+    <item
+        android:id="@+id/about_get_involved"
+        android:icon="@drawable/add_post"
+        android:title="More Information" />
+
+
+</menu>

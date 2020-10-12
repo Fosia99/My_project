@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9caa7"
+    tools:context=".ProfilePersonalActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/personal_profile_Image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/profile">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:id="@+id/personal_profile_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="200dp"
+                android:hint="Profile Name"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/personal_profile_userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/personal_profile_Name"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="100dp"
+                android:hint="User Name"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                android:textStyle="normal"></TextView>
+
+            <TextView
+                android:id="@+id/personal_profile_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/personal_profile_userName"
+                android:layout_marginTop="50dp"
+                android:hint="Profile Status ,This is were your status will be displayed"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                android:textStyle="normal"></TextView>
+
+            <TextView
+                android:id="@+id/personal_profile_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/personal_profile_status"
+                android:layout_marginTop="50dp"
+                android:hint="country"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                android:textStyle="normal"></TextView>
+
+            <TextView
+                android:id="@+id/personal_profile_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/personal_profile_country"
+                android:layout_marginTop="5dp"
+                android:hint="Date of birth"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                android:textStyle="normal"></TextView>
+
+            <TextView
+                android:id="@+id/personal_profile_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/personal_profile_dob"
+                android:layout_marginTop="5dp"
+                android:hint="Gender"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                android:textStyle="normal"></TextView>
+
+            <TextView
+                android:id="@+id/personal_profile_relationship_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/personal_profile_gender"
+                android:layout_marginTop="5dp"
+                android:hint="Relationship Status"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                android:textStyle="normal"></TextView>
+
+            <TextView
+                android:id="@+id/personal_profile_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/personal_profile_relationship_status"
+                android:layout_marginTop="5dp"
+                android:hint="Phone Number"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                android:textStyle="normal"></TextView>
+
+
+            <TextView
+                android:id="@+id/personal_profile_User_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/personal_profile_phone_number"
+                android:layout_marginTop="5dp"
+                android:hint="User Type"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                android:textStyle="normal"></TextView>
+
+
+            <TextView
+                android:id="@+id/personal_profile_interests"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/personal_profile_User_type"
+                android:layout_marginTop="5dp"
+                android:hint="Interests"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                 android:textStyle="normal"></TextView>
+
+            <Button
+                android:id="@+id/send_friend_request"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/personal_profile_interests"
+                android:text=" +Follow"
+                android:background="@drawable/button"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="150dp"
+
+                ></Button>
+            <Button
+                android:id="@+id/decline_friend_request"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/send_friend_request"
+                android:text="Decline Request"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button"
+                android:layout_marginLeft="150dp"
+
+                ></Button>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

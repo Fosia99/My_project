@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <ImageView
+        android:id="@+id/display_groupIcon"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="80dp"
+        android:background="@drawable/select_image"
+        android:layout_height="50dp">
+
+    </ImageView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:textAlignment="center"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/display_groupName"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:textSize="18sp"
+        android:hint="Group Name"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <TextView
+        android:id="@+id/display_groupDescription"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/display_groupName"
+        android:layout_width="match_parent"
+        android:hint="Group Description"
+        android:layout_marginLeft="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content">
+
+    </TextView>
+</LinearLayout>
+
+</LinearLayout>
